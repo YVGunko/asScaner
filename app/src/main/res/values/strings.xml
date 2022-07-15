@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ASproject. Контроль остатков.</string>
+    <string name="toggle_flash">Flash</string>
+    <string name="bScan">Scan!</string>
+    <string name="bOk">OK!</string>
+    <string name="check_server">Тест соединения</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_boxes">Коробки</string>
+    <string name="action_orders">Заказы</string>
+    <string name="action_prods">Текущая смена</string>
+    <string name="action_sendboxes">Отправить коробки</string>
+    <string name="action_receive_orders">Принять заказы</string>
+    <string name="action_get_data">Синхронизировать данные</string>
+    <string name="action_receive_spr">Обновить справочники</string>
+    <string name="spDeps_title">Выбор бригады</string>
+    <string name="spOpers_title">Выбор операции</string>
+    <string name="listFirstColumn">Заказ. Клиент.</string>
+    <string name="listSecondColumn">Номенклатура.</string>
+    <string name="add_record">Добавить запись</string>
+    <string name="delete_record">Удалить запись</string>
+</resources>
+
