@@ -332,12 +332,15 @@ public class SettingsActivity extends AppCompatActivity  {
 
     public void ocl_bExpDb(View v) {
         try {
+            final String backUpFile = mDBHelper.getDayTimeString(new Date())
+                    .replaceAll("[^a-zA-Z0-9]", "");
             final String result =
-                    mDBHelper.exportDatabase(this, mDBHelper.DB_NAME, mDBHelper.DB_EXP);
-                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                    mDBHelper.exportDatabase(this, mDBHelper.DB_NAME, backUpFile.concat(".db"));
+                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
 
         } catch (Exception e) {
             Log.d(LOG_TAG+". ExpDB", "Export DB exception: " + e.getMessage());
         }
     }
+
 }

@@ -132,13 +132,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 }
             } catch (Exception e) {
                 Log.d(LOG_TAG, "Export DB. Data transfer exception: " + e.getMessage());
+                return ("Export DB. Data transfer exception.");
             }
         else {
             Log.e(LOG_TAG, "Export DB: Context is not valid!");
             return "Export DB: Неверный контекст!";
         }
 
-        return "Экспорт завершен. Ваш файл должен находиться по этому пути: ".concat("/data/data/" + context.getPackageName() +"/databases/");
+        return "Экспорт завершен. Ваш файл должен находиться на SD карте в папке: Android/data/".concat(context.getPackageName() +"/files/");
     }
         private static Date getStartOfDayDate(Date date) {
             return org.apache.commons.lang3.time.DateUtils.truncate(date, Calendar.DATE);
